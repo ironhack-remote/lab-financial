@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> {{title}} </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+  <h1> {{title}} </h1>
+  <p>Welcome to {{title}} </p>
+  <label for="from">From date</label>
+  <input type="date" id="from">
+  <br>
+  <label for="to">To date</label>
+  <input id="to" type="date">
+  <br>
+  <select id="currency">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+  </select>
+  <br>
+  <div>
+    <h2 id="minVal"></h2>
+    <h2 id="maxVal"></h2>
+  </div>
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+</body>
+<script src="/javascripts/financial-data.js" charset="utf-8"></script>
+
+</html>
